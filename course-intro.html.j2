@@ -1,0 +1,21 @@
+<div style="background-color: {{ background_color }};">
+<p>&nbsp;</p>
+    <table align="center" border="1" cellpadding="0" cellspacing="0" style="width:{{ tiles|length * 150 }}px;border-color:{{ foreground_color }};">
+        <tbody>
+            <tr>
+            {% for item in tiles %}
+                <td style="width: 150px; height: 150px; background-color: {{ background_color }}; border-color: {{ foreground_color }}; text-align: center; vertical-align: middle;">
+                <p><a href="{{ item.url }}"><img alt="" height="50" src="{{ item.img }}" width="50" /></a></p>
+    
+                <p>&nbsp;</p>
+    
+                <p><a href="{{ item.url }}"><span style="color:{{ foreground_color }};"><strong>{{ item.line1 }}</strong></span></a></p>
+    
+                <p><a href="{{ item.url }}"><span style="color:{{ foreground_color }};">{{ item.line2 }}</span></a></p>
+                </td>
+            {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+<p>&nbsp;</p>
+</div>

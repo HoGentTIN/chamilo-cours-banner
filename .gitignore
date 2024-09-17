@@ -1,0 +1,6 @@
+# .gitignore - chamilo-course-banner
+
+# Negeer .yml en .html-bestanden
+*.yml
+*.html
+
